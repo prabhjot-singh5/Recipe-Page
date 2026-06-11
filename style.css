@@ -1,0 +1,288 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: 400 600 700;
+}
+
+@font-face {
+    font-family: "YoungSerif";
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Outfit", "YoungSerif", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Stone100);
+    color: var(--Stone900);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 45rem;
+    background-color: var(--White);
+    border-radius: 1.3rem;
+    padding: 2.5rem;
+    margin: 5rem 0rem;
+}
+
+.image-container {
+    margin-bottom: 0.8rem;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 1.3rem;
+}
+
+
+
+.intro h1 {
+    font-family: "YoungSerif";
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.intro p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--Stone600);
+}
+
+.preparation-time {
+    background-color: var(--Rose50);
+    padding: 1rem;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.preparation-time h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--Rose800);
+}
+
+.preparation-time ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.preparation-time li {
+    color: var(--Stone600);
+    font-weight: 400;
+    padding-left: 1.2rem;
+}
+
+.preparation-time li::marker {
+    color: var(--Rose800);
+}
+
+.bold {
+    font-weight: 700;
+    color: var(--Stone600);
+}
+
+.ingredients h2 {
+    font-family: "YoungSerif";
+    color: var(--Brown800);
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+
+.ingredients ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.ingredients li::marker {
+    color: var(--Rose800);
+}
+
+.ingredients li {
+    color: var(--Stone600);
+    font-weight: 400;
+    padding-left: 1.2rem;
+}
+
+hr {
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.instructions h2 {
+    font-family: "YoungSerif";
+    color: var(--Brown800);
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+
+.instructions ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+}
+
+.instructions li::marker {
+    color: var(--Rose800);
+    font-weight: 700;
+
+}
+
+.instructions li {
+    color: var(--Stone600);
+    font-weight: 400;
+    padding-left: 1.2rem;
+}
+
+.nutrition h2 {
+    font-family: "YoungSerif";
+    color: var(--Brown800);
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+
+.nutrition p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--Stone600);
+}
+
+.nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.nutrition th,
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+
+
+.table-left {
+    color: var(--Stone600);
+    font-weight: 400;
+}
+
+.table-right {
+    font-weight: 700;
+    color: var(--Brown800);
+}
+
+
+
+@media (max-width:375px) {
+    main {
+        background-color: brown;
+        color: var(--Stone900);
+    }
+
+    .card {
+        width: 30rem;
+        border-radius: 0rem;
+        padding: 2rem;
+    }
+
+    .image-container{
+        margin: -2rem -2rem -2rem -2rem;
+    }
+    
+    .image-container img {
+        padding: 0rem;
+        width: 100%;
+        border-radius: 0rem;
+    }
+
+
+
+    .intro h1 {
+        margin-top: 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 0.8rem;
+    }
+
+
+    .instructions ol {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
+@media (max-width: 730px) {
+    .card {
+        margin: 0;
+        border-radius: 0rem;
+    }
+
+
+    .image-container{
+        margin: -2.5rem -2.5rem -2.5rem -2.5rem;
+    }
+     .image-container img {
+        padding: 0rem;
+        width: 100%;
+        border-radius: 0rem;
+    }
+    .intro h1 {
+        margin-top: 3rem;
+        font-size: 1.8rem;
+    }
+
+}
+
